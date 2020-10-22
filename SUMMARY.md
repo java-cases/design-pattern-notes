@@ -1,7 +1,7 @@
 # Summary
 
 * [设计模式简介](README.md)
-   * [GoF 的 23 种设计模式](gof_23.md)
+   * [GoF 的 23 种设计模式](gof_23_classification.md)
 * [面向对象设计原则](oo_principle/README.md)
    * [开闭原则（Open Closed Principle）](oo_principle/open_closed_principle.md)
    * [单一职责原则（Single Responsibility Principle)](oo_principle/single_responsibility_principle.md)
