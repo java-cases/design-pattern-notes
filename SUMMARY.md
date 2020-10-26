@@ -1,8 +1,8 @@
 # Summary
 
-1. [设计模式简介](README.md)
-
-   * [GoF 的 23 种设计模式](gof_23_classification.md)
+1. 设计模式简介
+   * [软件设计模式概述](README.md)
+   * [GoF 23 种设计模式分类](gof_23_classification.md)
 
 2. [面向对象设计原则](oo_principle/README.md)
    * [开闭原则（Open Closed Principle）](oo_principle/open_closed_principle.md)
@@ -46,6 +46,6 @@
 
 7. 扩展阅读
 
-   * [设计模式关系图](extensions\relationships_of_23_design_patterns.md)
+   * [设计模式关系图](extensions/relationships_of_23_design_patterns.md)
 
-   * [Gof 23 设计模式使用手册](extensions\gof_23_handbook.md)
+   * [Gof 23 设计模式使用手册](extensions/gof_23_handbook.md)
