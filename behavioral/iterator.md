@@ -56,7 +56,7 @@ package iterator;import java.util.*;public class IteratorPattern{    public stat
 程序运行结果如下：
 
 ```
-聚合的内容有：中山大学    华南理工    韶关学院   
+聚合的内容有：中山大学    华南理工    韶关学院
 First：中山大学
 ```
 
