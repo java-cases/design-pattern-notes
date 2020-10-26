@@ -44,55 +44,55 @@
 ```java
 package command;
 
-public class CommandPattern{    
-    public static void main(String[] args)    {        
-        Command cmd=new ConcreteCommand();        
-        Invoker ir=new Invoker(cmd);        
-        System.out.println("客户访问调用者的call()方法...");        
-        ir.call();    
+public class CommandPattern{
+    public static void main(String[] args)    {
+        Command cmd=new ConcreteCommand();
+        Invoker ir=new Invoker(cmd);
+        System.out.println("客户访问调用者的call()方法...");
+        ir.call();
     }
 }
 
 //调用者
-class Invoker{    
-    private Command command;    
-    
-    public Invoker(Command command)    {        
-        this.command=command;    
-    }    
-    
-    public void setCommand(Command command)    {        
-        this.command=command;    
-    }    
-    
-    public void call()    {        
-        System.out.println("调用者执行命令command...");        
-        command.execute();    
+class Invoker{
+    private Command command;
+
+    public Invoker(Command command)    {
+        this.command=command;
+    }
+
+    public void setCommand(Command command)    {
+        this.command=command;
+    }
+
+    public void call()    {
+        System.out.println("调用者执行命令command...");
+        command.execute();
     }
 }
 
 //抽象命令
-public interface Command{    
+public interface Command{
      abstract void execute();
 }
 
 //具体命令
-class ConcreteCommand implements Command{    
-    private Receiver receiver;    
-    
-    ConcreteCommand()    {        
-        receiver=new Receiver();    
-    }    
-    
-    public void execute()    {        
-        receiver.action();    
+class ConcreteCommand implements Command{
+    private Receiver receiver;
+
+    ConcreteCommand()    {
+        receiver=new Receiver();
+    }
+
+    public void execute()    {
+        receiver.action();
     }
 }
 
 //接收者
-class Receiver{    
-    public void action()    {        
-        System.out.println("接收者的action()方法被调用...");    
+class Receiver{
+    public void action()    {
+        System.out.println("接收者的action()方法被调用...");
     }
 }
 ```
@@ -147,82 +147,82 @@ class Receiver{
 package command;
 import java.util.ArrayList;
 
-public class CompositeCommandPattern{    
-    public static void main(String[] args)    {        
-        AbstractCommand cmd1=new ConcreteCommand1();        
-        AbstractCommand cmd2=new ConcreteCommand2();        
-        
-        CompositeInvoker ir=new CompositeInvoker();        
-        ir.add(cmd1);        
-        ir.add(cmd2);        
-        
-        System.out.println("客户访问调用者的execute()方法...");        
-        ir.execute();    
+public class CompositeCommandPattern{
+    public static void main(String[] args)    {
+        AbstractCommand cmd1=new ConcreteCommand1();
+        AbstractCommand cmd2=new ConcreteCommand2();
+
+        CompositeInvoker ir=new CompositeInvoker();
+        ir.add(cmd1);
+        ir.add(cmd2);
+
+        System.out.println("客户访问调用者的execute()方法...");
+        ir.execute();
     }
 }
 
 //抽象命令
-interface AbstractCommand{    
+interface AbstractCommand{
     public abstract void execute();
 }
 
 //树叶构件: 具体命令1
-class ConcreteCommand1 implements AbstractCommand{    
-    private CompositeReceiver receiver;   
-    
-    ConcreteCommand1(){        
-        receiver=new CompositeReceiver();    
-    }    
-    
-    public void execute()    {               
-        receiver.action1();    
+class ConcreteCommand1 implements AbstractCommand{
+    private CompositeReceiver receiver;
+
+    ConcreteCommand1(){
+        receiver=new CompositeReceiver();
+    }
+
+    public void execute()    {
+        receiver.action1();
     }
 }
 
 //树叶构件: 具体命令2
-class ConcreteCommand2 implements AbstractCommand{    
-    private CompositeReceiver receiver;    
-    
-    ConcreteCommand2(){        
-        receiver=new CompositeReceiver();    
-    } 
-    
-    public void execute(){               
-        receiver.action2();    
+class ConcreteCommand2 implements AbstractCommand{
+    private CompositeReceiver receiver;
+
+    ConcreteCommand2(){
+        receiver=new CompositeReceiver();
+    }
+
+    public void execute(){
+        receiver.action2();
     }
 }
 
 //树枝构件: 调用者
-class CompositeInvoker implements AbstractCommand{    
-    private ArrayList<AbstractCommand> children = new ArrayList<AbstractCommand>();       
-    
-    public void add(AbstractCommand c){        
-        children.add(c);    
-    }       
-    
-    public void remove(AbstractCommand c){        
-        children.remove(c);    
-    }  
-    
-    public AbstractCommand getChild(int i){        
-        return children.get(i);    
-    }     
-    
-    public void execute(){        
-        for(Object obj:children)        {            
-            ((AbstractCommand)obj).execute();        
-        }    
-    }    
+class CompositeInvoker implements AbstractCommand{
+    private ArrayList<AbstractCommand> children = new ArrayList<AbstractCommand>();
+
+    public void add(AbstractCommand c){
+        children.add(c);
+    }
+
+    public void remove(AbstractCommand c){
+        children.remove(c);
+    }
+
+    public AbstractCommand getChild(int i){
+        return children.get(i);
+    }
+
+    public void execute(){
+        for(Object obj:children)        {
+            ((AbstractCommand)obj).execute();
+        }
+    }
 }
 
 //接收者
-class CompositeReceiver{    
-    public void action1(){        
-        System.out.println("接收者的action1()方法被调用...");    
-    }    
-    
-    public void action2(){        
-        System.out.println("接收者的action2()方法被调用...");    
+class CompositeReceiver{
+    public void action1(){
+        System.out.println("接收者的action1()方法被调用...");
+    }
+
+    public void action2(){
+        System.out.println("接收者的action2()方法被调用...");
     }
 }
 ```

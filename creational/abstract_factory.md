@@ -60,8 +60,8 @@
 (1) **抽象工厂**：提供了产品的生成方法。
 
 ```java
-interface AbstractFactory {    
-  public Product1 newProduct1();    
+interface AbstractFactory {
+  public Product1 newProduct1();
   public Product2 newProduct2();
 }
 ```
@@ -71,15 +71,15 @@ interface AbstractFactory {
 (2) **具体工厂**：实现了产品的生成方法。
 
 ```java
-class ConcreteFactory1 implements AbstractFactory {    
-  public Product1 newProduct1() {        
-    System.out.println("具体工厂 1 生成-->具体产品 11...");        
-    return new ConcreteProduct11();    
-  }    
-  
-  public Product2 newProduct2() {        
-    System.out.println("具体工厂 1 生成-->具体产品 21...");        
-    return new ConcreteProduct21();    
+class ConcreteFactory1 implements AbstractFactory {
+  public Product1 newProduct1() {
+    System.out.println("具体工厂 1 生成-->具体产品 11...");
+    return new ConcreteProduct11();
+  }
+
+  public Product2 newProduct2() {
+    System.out.println("具体工厂 1 生成-->具体产品 21...");
+    return new ConcreteProduct21();
   }
 }
 ```
