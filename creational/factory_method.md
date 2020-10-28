@@ -161,7 +161,7 @@ class ReadXML1 {
 
 客户端程序通过对象生成器类 ReadXML2 读取 XML 配置文件中的数据来决定养马还是养牛。其结构图如图 2 所示。
 
-![畜牧场结构图](http://c.biancheng.net/uploads/allimg/181114/3-1Q11413554DT.gif)
+![畜牧场结构图](_images/factory_method_example.gif)
 图2 畜牧场结构图
 
 
