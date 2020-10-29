@@ -61,6 +61,8 @@
 
 主要参考《Java设计模式：23种设计模式全面解析》，仅作学习交流用。http://c.biancheng.net/view/1317.html
 
+参考：https://www.runoob.com/design-pattern/design-pattern-intro.html
+
 ## 目录
 
 * [设计模式目录](SUMMARY.md)

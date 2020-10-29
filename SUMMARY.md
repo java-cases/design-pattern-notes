@@ -37,6 +37,7 @@
    * [策略模式(Strategy）](behavioral/strategy.md)
    * [模板方法模式(Template Method）](behavioral/template_method.md)
    * [访问者模式(Visitor）yued](behavioral/visitor.md)
+* [J2EE](j2ee/README.md)
 * [其他模式(Other)](other/README.md)
 * [扩展阅(extensions)](extensions/README.md)
    * [设计模式关系图](extensions/relationships_of_23_design_patterns.md)
