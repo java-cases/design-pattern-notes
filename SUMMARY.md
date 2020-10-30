@@ -41,6 +41,7 @@
    * [过滤器模式](other/filter.md)
    * [空对象模式](other/null_object.md)
 * [扩展阅读(extensions)](extensions/README.md)
+   * [一句话归纳设计模式](extensions/gof_23_summary.md)
    * [设计模式关系图](extensions/relationships_of_23_design_patterns.md)
    * [Gof 23 设计模式使用手册](extensions/gof_23_handbook.md)
    * [J2EE](extensions/j2ee/README.md)
