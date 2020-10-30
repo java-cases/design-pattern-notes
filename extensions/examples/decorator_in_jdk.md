@@ -11,7 +11,7 @@
 
 下面为 InputStream 的类图，如下所示。
 
-![img](http://c.biancheng.net/uploads/allimg/201010/5-20101011201a07.png)
+![img](_images/bridge_msg.png)
 
 
 如果需要一个能够读取文件且可缓存的字节流，可以继承 BufferedInputStream。如果需要一个能够读取文件且直接读取基本类型的字节流，可以继承 FileDataInputStream。但是如果用继承方式，那类的层级与种类会多到爆炸。

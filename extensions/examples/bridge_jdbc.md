@@ -196,6 +196,4 @@ public class DriverManager{
 
 在 getConnection() 中，又会调用各自厂商实现的 Driver 的 connect() 方法获得连接对象。这样就巧妙地避开了使用继承，为不同的数据库提供了相同的接口。JDBC API 中的 DriverManager 就是桥，如下图所示。
 
-
-
-![JDBC桥接模式类图](http://c.biancheng.net/uploads/allimg/200930/5-200930155104362.png)
+![JDBC桥接模式类图](_images/bridge_jdbc.png)

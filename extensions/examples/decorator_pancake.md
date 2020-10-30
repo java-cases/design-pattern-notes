@@ -214,4 +214,4 @@ public class Test {
 
 最后来看类图，如下图所示。
 
-![煎饼”加码“UML类图](http://c.biancheng.net/uploads/allimg/201009/5-201009113Z0R1.png)
+![煎饼”加码“UML类图](_images/decorator_pancake.png)

@@ -27,9 +27,7 @@ public Object getObject() throws BeansException {
 
 Spring 使用动态代理实现 AOP 时有两个非常重要的类，即 JdkDynamicAopProxy 类和 CglibAopProxy 类，其类图如下：
 
-
-
-![img](http://c.biancheng.net/uploads/allimg/200923/5-200923155932P5.png)
+![img](_images/proxy_spring.png)
 
 
 
