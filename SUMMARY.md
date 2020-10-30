@@ -44,6 +44,7 @@
    * [一句话归纳设计模式](extensions/gof_23_summary.md)
    * [设计模式关系图](extensions/relationships_of_23_design_patterns.md)
    * [Gof 23 设计模式使用手册](extensions/gof_23_handbook.md)
+   * [Gof 23 范例](extensions/examples/README.md)
    * [J2EE](extensions/j2ee/README.md)
      * [MVC 模式（MVC Pattern）](extensions/j2ee/mvc.md)
      * [业务代表模式（Business Delegate Pattern）](extensions/j2ee/business_delegate.md)
