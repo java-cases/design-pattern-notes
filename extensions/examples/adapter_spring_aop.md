@@ -6,9 +6,7 @@
 
 各种不同类型的 Interceptor，通过适配器统一对外提供接口，如下类图所示：client ---> target ---> adapter ---> interceptor ---> advice。最终调用不同的 advice来实现被代理类的增强。
 
-
-
-![img](http://c.biancheng.net/uploads/allimg/200927/5-20092GH4105a.png)
+![img](_images/adapter_spring_aop.png)
 
 
 Spring AOP 的 AdvisorAdapter 类有 4 个实现类，即 SimpleBeforeAdviceAdapter、MethodBeforeAdviceAdapter、AfterReturningAdviceAdapter 和 ThrowsAdviceAdapter。先来看顶层接口 AdvisorAdapter。
@@ -46,9 +44,7 @@ class MethodBeforeAdviceAdapter implements AdvisorAdapter, Serializable {
 
 适配器模式在 SpringMVC 中的经典使用体现在它的核心方法 doDispatch 方法中，再来看一个 Spring MVC 中的 HandlerAdapter 类，它也有多个子类，类图如下。
 
-
-
-![img](http://c.biancheng.net/uploads/allimg/200927/5-20092G24T2227.png)
+![img](_images/adapter_handler.png)
 
 
 其适配调用的关键代码还是在 DispatcherServlet 的 doDispatch() 方法中，代码如下。

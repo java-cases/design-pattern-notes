@@ -236,7 +236,7 @@ public static void main(String[] args) {
 
 最后来看如下图所示的类图：
 
-![img](http://c.biancheng.net/uploads/allimg/200925/5-2009251GU5a4.png)
+![img](_images/adapter_login.png)
 
 
 到这里，在遵循开闭原则的前提下，我们完整的实现了一个兼容多平台登录的业务场景。

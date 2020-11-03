@@ -8,6 +8,19 @@
 
 [Gof 23 范例](/examples/README.md)
 
+* [适配器重构第三方登录](examples/adapter_login.md)
+* [适配器模式在Spring源码中的应用](examples/adapter_spring_aop.md)
+* [桥接模式在JDBC源码中的应用](examples/bridge_jdbc.md)
+* [使用桥接模式设计复杂消息系统](examples/bridge_msg.md)
+* [建造者模式在框架源码中的应用](examples/builder_mybatis.md)
+* [装饰器模式在JDK源码中的应用](examples/decorator_in_jdk.md)
+* [使用装饰器模式解决煎饼“加码”问题](examples/decorator_pancake.md)
+* [使用代理模式切换数据源](examples/proxy_db_shard.md)
+* [彻底搞懂JDK动态代理核心原理](examples/proxy_dynamic.md)
+* [代理模式在Spring源码中的应用](examples/proxy_spring.md)
+* [静态代理和动态代理](examples/proxy_static_dynamic.md)
+* [代理模式在MyBatis源码中的应用](examples/proxy_dynamic_mybatis.md)
+
 [J2EE设计模式](j2ee/README.md)
 
 - [MVC 模式（MVC Pattern）](j2ee/mvc.md)

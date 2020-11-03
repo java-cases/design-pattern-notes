@@ -188,9 +188,7 @@ OrderDao创建Order成功
 
 运行结果符合预期，类图如下所示：
 
-
-
-![img](http://c.biancheng.net/uploads/allimg/200921/5-200921095U3455.png)
+![img](_images/proxy_db_shard.png)
 
 
 动态代理和静态代理的基本思路是一致的，只不过动态代理的功能更强大，随着业务的扩展，适应性更强。
