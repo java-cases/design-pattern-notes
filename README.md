@@ -59,9 +59,15 @@
 #### 4. 效果
 **描述了模式的应用效果以及使用该模式应该权衡的问题，即模式的优缺点**。**主要是对时间和空间的衡量，以及该模式对系统的灵活性、扩充性、可移植性的影响，也考虑其实现问题**。显式地列出这些效果（Consequence）对理解和评价这些模式有很大的帮助。
 
-主要参考《Java设计模式：23种设计模式全面解析》，仅作学习交流用。http://c.biancheng.net/view/1317.html
+## 设计模式 VS 设计原则
 
-参考：https://www.runoob.com/design-pattern/design-pattern-intro.html
+**设计模式是武功招数，设计原则是内功心法**。设计模式的本质是面向对象设计原则的实际运用，是对类的封装性、继承性和多态性，以及类的关联关系和组合关系的充分理解。
+
+
+
+> 主要参考《Java设计模式：23种设计模式全面解析》，仅作学习交流用。参考1：http://c.biancheng.net/view/1317.html  参考2：参考：https://www.runoob.com/design-pattern/design-pattern-intro.html
+
+
 
 ## 目录
 
