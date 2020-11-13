@@ -54,7 +54,7 @@
 
 
 
-![句子“我是大学生”的语法树](http://c.biancheng.net/uploads/allimg/181119/3-1Q119150550114.gif)
+![句子“我是大学生”的语法树](_images/interpreter_syntax_tree.gif)
 图1 句子“我是大学生”的语法树
 
 
@@ -75,7 +75,7 @@
 
 
 
-![解释器模式的结构图](http://c.biancheng.net/uploads/allimg/181119/3-1Q119150626422.gif)
+![解释器模式的结构图](_images/interpreter.gif)
 图2 解释器模式的结构图
 
 #### 2. 模式的实现
@@ -141,9 +141,7 @@ class Context{
 - 定义一个非终结符表达式（AndExpressicm）类，它也是抽象表达式的子类，它包含满足条件的城市的终结符表达式对象和满足条件的人员的终结符表达式对象，并实现 interpret(String info) 方法，用来判断被分析的字符串是否是满足条件的城市中的满足条件的人员。
 - 最后，定义一个环境（Context）类，它包含解释器需要的数据，完成对终结符表达式的初始化，并定义一个方法 freeRide(String info) 调用表达式对象的解释方法来对被分析的字符串进行解释。其结构图如图 3 所示。
 
-
-
-![“韶粵通”公交车读卡器程序的结构图](http://c.biancheng.net/uploads/allimg/181119/3-1Q119150Q6401.gif)
+![公交车读卡器程序的结构图](_images/interpreter_example.gif)
 图3 “韶粵通”公交车读卡器程序的结构图
 
 

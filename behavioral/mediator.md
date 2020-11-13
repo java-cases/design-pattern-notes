@@ -33,7 +33,7 @@
 
 中介者模式的结构图如图 1 所示。
 
-![中介者模式的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q1161I532V0.gif)
+![中介者模式的结构图](_images/mediator.gif)
 图1 中介者模式的结构图
 
 #### 2. 模式的实现
@@ -147,7 +147,7 @@ class ConcreteColleague2 extends Colleague{
 
 最后，定义卖方（Seller）类和买方（Buyer）类，它们是具体同事类，是客户（Customer）类的子类，它们实现了父类中的抽象方法，通过中介者类进行信息交流，其结构图如图 2 所示。
 
-![韶关房地产交流平台的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q1161I559410.gif)
+![房地产交流平台的结构图](_images/mediator_example.gif)
 图2 房地产交流平台的结构图
 
 
@@ -280,9 +280,7 @@ class Buyer extends Customer{
 
 图 4 所示是简化中介者模式的结构图。
 
-
-
-![简化中介者模式的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q1161IA5242.gif)
+![简化中介者模式的结构图](_images/mediator_ext.gif)
 图4 简化中介者模式的结构图
 
 

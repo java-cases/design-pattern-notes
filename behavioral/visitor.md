@@ -40,8 +40,8 @@
 
 其结构图如图 1 所示。
 
-[![访问者（Visitor）模式的结构图](http://c.biancheng.net/uploads/allimg/181119/3-1Q11910135Y25.gif)](http://c.biancheng.net/uploads/allimg/181119/3-1Q119101429D6.gif)
-图1 访问者（Visitor）模式的结构图（[点此查看原图](http://c.biancheng.net/uploads/allimg/181119/3-1Q119101429D6.gif)）
+![访问者（Visitor）模式的结构图](_images/visitor.gif)
+图1 访问者（Visitor）模式的结构图
 
 #### 2. 模式的实现
 
@@ -168,7 +168,7 @@ class ObjectStructure{
 
 图 2 所示是其结构图。
 
-![艺术公司与造币公司的结构图](http://c.biancheng.net/uploads/allimg/181119/3-1Q119101J2P8.gif)
+![艺术公司与造币公司的结构图](_images/visitor_example.gif)
 图2 艺术公司与造币公司的结构图
 
 
@@ -189,7 +189,5 @@ class ObjectStructure{
 
 (2)**访问者（Visitor）模式同“[组合模式](../structural/composite.md)”联用**。*因为访问者（Visitor）模式中的“元素对象”可能是叶子对象或者是容器对象，如果元素对象包含容器对象，就必须用到[组合模式](../structural/composite.md)，*其结构图如图 4 所示。
 
-
-
-![包含组合模式的访问者模式的结构图](http://c.biancheng.net/uploads/allimg/181119/3-1Q11910210Jc.gif)
+![包含组合模式的访问者模式的结构图](_images/visitor_composite.gif)
 图4 包含组合模式的访问者模式的结构图

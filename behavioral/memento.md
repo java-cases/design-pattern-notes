@@ -33,7 +33,7 @@
 
 备忘录模式的结构图如图 1 所示。
 
-![备忘录模式的结构图](http://c.biancheng.net/uploads/allimg/181119/3-1Q119130413927.gif)
+![备忘录模式的结构图](_images/memento.gif)
 图1 备忘录模式的结构图
 
 #### 2. 模式的实现
@@ -135,7 +135,7 @@ class Caretaker{
 
 客户类包含美女栈（GirlStack）对象和相亲者（You）对象。图 2 所示是其结构图。
 
-![相亲游戏的结构图](http://c.biancheng.net/uploads/allimg/181119/3-1Q119130439230.gif)
+![相亲游戏的结构图](_images/memento_example.gif)
 图2 相亲游戏的结构图
 
 
@@ -151,7 +151,7 @@ class Caretaker{
 
 在前面介绍的备忘录模式中，有单状态备份的例子，也有多状态备份的例子。下面介绍备忘录模式如何同[原型模式]混合使用。在备忘录模式中，通过定义“备忘录”来备份“发起人”的信息，而原型模式的 clone() 方法具有自备份功能，所以，如果让发起人实现 Cloneable 接口就有备份自己的功能，这时可以删除备忘录类，其结构图如图 4 所示。
 
-![带原型的备忘录模式的结构图](http://c.biancheng.net/uploads/allimg/181119/3-1Q119130HW56.gif)
+![带原型的备忘录模式的结构图](_images/memento_prototype.gif)
 图4 带原型的备忘录模式的结构图
 
 

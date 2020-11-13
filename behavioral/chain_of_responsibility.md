@@ -2,7 +2,7 @@
 
 在现实生活中，常常会出现这样的事例*：一个请求有多个对象可以处理，但每个对象的处理条件或权限不同*。例如，公司员工请假，可批假的领导有部门负责人、副总经理、总经理等，但每个领导能批准的天数不同，员工必须根据自己要请假的天数去找不同的领导签名，也就是说员工必须记住每个领导的姓名、电话和地址等信息，这增加了难度。这样的例子还有很多，如找领导出差报销、生活中的**“击鼓传花”游戏**等。
 
-在计算机软硬件中也有相关例子，如总线网中数据报传送，每台计算机根据目标地址是否同自己的地址相同来决定是否接收；还有异常处理中，处理程序根据异常的类型决定自己是否处理该异常；还有 [Struts2](http://c.biancheng.net/struts2/) 的拦截器、[JSP](http://c.biancheng.net/jsp/) 和 [Servlet](http://c.biancheng.net/servlet/) 的 Filter 等，所有这些，如果用责任链模式都能很好解决。
+在计算机软硬件中也有相关例子，如总线网中数据报传送，每台计算机根据目标地址是否同自己的地址相同来决定是否接收；还有异常处理中，处理程序根据异常的类型决定自己是否处理该异常；还有 Struts2 的拦截器、JSP 和 Servlet 的 Filter 等，所有这些，如果用责任链模式都能很好解决。
 
 ## 模式的定义与特点
 
@@ -41,14 +41,12 @@
 
 其结构图如图 1 所示。客户端可按图 2 所示设置责任链。
 
-
-
-![责任链模式的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q116135Z11C.gif)
+![责任链模式的结构图](_images/chain_of_responsibility.gif)
 图1 责任链模式的结构图
 
 
 
-![责任链](http://c.biancheng.net/uploads/allimg/181116/3-1Q11613592TF.gif)
+![责任链](_images/chain_of_responsibility_links.gif)
 图2 责任链
 
 #### 2. 模式的实现
@@ -137,7 +135,7 @@ class ConcreteHandler2 extends Handler{
 
 
 
-![请假条审批模块的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q11614000IV.gif)
+![请假条审批模块的结构图](_images/chain_of_responsibility_example.gif)
 图3 请假条审批模块的结构图
 
 

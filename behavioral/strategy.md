@@ -38,7 +38,7 @@
 
 其结构图如图 1 所示。
 
-![策略模式的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q116103K1205.gif)
+![策略模式的结构图](_images/strategy.gif)
 图1 策略模式的结构图
 
 #### 2. 模式的实现
@@ -120,7 +120,7 @@ class Context{
 
 最后，定义一个厨房（Kitchen）环境类，它具有设置和选择做菜策略的方法；客户类通过厨房类获取做菜策略，并把做菜结果图在窗体中显示出来，图 2 所示是其结构图。
 
-![大闸蟹做菜策略的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q116103R5638.gif)
+![大闸蟹做菜策略的结构图](_images/strategy_example_cooking.gif)
 图2 大闸蟹做菜策略的结构图
 
 
@@ -130,7 +130,7 @@ class Context{
 
 分析：旅游有以下几种出行方式：坐火车、坐汽车和自驾车，所以该实例用策略模式比较适合，图 4 所示是其结构图。
 
-![婺源旅游结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q11610393E92.gif)
+![婺源旅游结构图](_images/strategy_example_trip.gif)
 图4 旅游出行策略结构图
 
 ## 策略模式的应用场景
@@ -147,7 +147,5 @@ class Context{
 
 在一个使用策略模式的系统中，**当存在的策略很多时，客户端管理所有策略算法将变得很复杂，如果在环境类中使用策略工厂模式来管理这些策略类将大大减少客户端的工作复杂度**，其结构图如图 5 所示。
 
-
-
-![策略工厂模式的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q116104010550.gif)
+![策略工厂模式的结构图](_images/strategy_ext.gif)
 图5 策略工厂模式的结构图

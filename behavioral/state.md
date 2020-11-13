@@ -36,7 +36,7 @@
 
 其结构图如图 1 所示。
 
-![状态模式的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q11615412U55.gif)
+![状态模式的结构图](_images/state.gif)
 图1 状态模式的结构图
 
 #### 2. 模式的实现
@@ -125,9 +125,7 @@ class ConcreteStateB extends State{
 
 最后，定义环境类（ScoreContext），其中包含了当前状态对象和加减分的方法 add(int score)，客户类通过该方法来改变成绩状态。图 2 所示是其结构图。
 
-
-
-![学生成绩的状态转换程序的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q11615425V39.gif)
+![学生成绩的状态转换程序的结构图](_images/state_example_score.gif)
 图2 学生成绩的状态转换程序的结构图
 
 
@@ -261,17 +259,13 @@ class HighState extends AbstractState{
 
 分析：多线程存在 5 种状态，分别为新建状态、就绪状态、运行状态、阻塞状态和死亡状态，各个状态当遇到相关方法调用或事件触发时会转换到其他状态，其状态转换规律如图 3 所示。
 
-
-
-![线程状态转换图](http://c.biancheng.net/uploads/allimg/181116/3-1Q116154332451.gif)
+![线程状态转换图](_images/state_example_thread_status.gif)
 图3 线程状态转换图
 
 
 现在先定义一个抽象状态类（TheadState），然后为图 3 所示的每个状态设计一个具体状态类，它们是新建状态（New）、就绪状态（Runnable ）、运行状态（Running）、阻塞状态（Blocked）和死亡状态（Dead），每个状态中有触发它们转变状态的方法，环境类（ThreadContext）中先生成一个初始状态（New），并提供相关触发方法，图 4 所示是线程状态转换程序的结构图。
 
-
-
-![线程状态转换程序的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q116154432352.gif)
+![线程状态转换程序的结构图](_images/state_example_thread.gif)
 图4 线程状态转换程序的结构图
 
 
@@ -445,9 +439,7 @@ class Dead extends ThreadState{
 
 在有些情况下，*可能有多个环境对象需要共享一组状态，这时需要引入享元模式，将这些具体状态对象放在集合中供程序共享*，其结构图如图 5 所示。
 
-
-
-![共享状态模式的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q116154539147.gif)
+![共享状态模式的结构图](_images/state_ext.gif)
 图5 共享状态模式的结构图
 
 

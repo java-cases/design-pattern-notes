@@ -34,7 +34,7 @@
 
 观察者模式的结构图如图 1 所示。
 
-![观察者模式的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q1161A6221S.gif)
+![观察者模式的结构图](_images/observer.gif)
 图1 观察者模式的结构图
 
 #### 2. 模式的实现
@@ -132,9 +132,7 @@ class ConcreteObserver2 implements Observer{
 
 进口公司（ImportCompany）类和出口公司（ExportCompany）类是具体观察者类，它们实现了父类的 response(int number) 方法，即当它们接收到汇率发生改变的通知时作为相应的反应。图 2 所示是其结构图。
 
-
-
-![人民币汇率分析程序的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q1161A646395.gif)
+![人民币汇率分析程序的结构图](_images/observer_example_rate.gif)
 图2 人民币汇率分析程序的结构图
 
 
@@ -229,9 +227,7 @@ class ExportCompany implements Company {
 
 分析：在本实例中，学校的“铃”是事件源和目标，“老师”和“学生”是事件监听器和具体观察者，“铃声”是事件类。学生和老师来到学校的教学区，都会注意学校的铃，这叫事件绑定；当上课时间或下课时间到，会触发铃发声，这时会生成“铃声”事件；学生和老师听到铃声会开始上课或下课，这叫事件处理。这个实例非常适合用观察者模式实现，图 3 给出了学校铃声的事件模型。
 
-
-
-![学校铃声的事件模型图](http://c.biancheng.net/uploads/allimg/181116/3-1Q1161AGQ46.gif)
+![学校铃声的事件模型图](_images/observer_example_ring_event.gif)
 图3 学校铃声的事件模型图
 
 现在用“观察者模式”来实现该事件处理模型。
@@ -246,7 +242,7 @@ class ExportCompany implements Company {
 
 图 4 给出了学校铃声事件处理程序的结构。
 
-![学校铃声事件处理程序的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q1161AP0K8.gif)
+![学校铃声事件处理程序的结构图](_images/observer_example_ring.gif)
 图4 学校铃声事件处理程序的结构图
 
 
@@ -373,7 +369,7 @@ class StuEventListener implements BellEventListener{
 
 ## 模式的扩展
 
-在 [Java](http://c.biancheng.net/java/) 中，通过 java.util.Observable 类和 java.util.Observer 接口定义了观察者模式，只要实现它们的子类就可以编写观察者模式实例。
+在 Java 中，通过 java.util.Observable 类和 java.util.Observer 接口定义了观察者模式，只要实现它们的子类就可以编写观察者模式实例。
 
 #### 1. Observable类
 
@@ -397,9 +393,7 @@ Observer 接口是抽象观察者，它监视目标对象的变化，当目标�
 
 图 5 所示是其结构图。
 
-
-
-![原油期货的观察者模式实例的结构图](http://c.biancheng.net/uploads/allimg/181116/3-1Q1161ARKO.gif)
+![原油期货的观察者模式实例的结构图](_images/observer_example_oil.gif)
 图5 原油期货的观察者模式实例的结构图
 
 
